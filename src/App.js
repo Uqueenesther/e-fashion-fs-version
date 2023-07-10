@@ -1,6 +1,6 @@
 
 import React from 'react';
-import './categories.styles.scss'
+import './main.scss'
 import { Routes, Route } from 'react-router-dom';
 import Home from './routes/home/Home';
 import Navigation from './routes/navigation/Navigation';
@@ -9,13 +9,10 @@ import Shop from './routes/shop/Shop';
 import Checkout from './routes/checkout/checkout';
 
 
-
-
-
 const App = () => {
   return (
     <Routes>
-      <Route path='/'  element ={<Navigation />}>
+      <Route path='/' element ={<Navigation />}>
           <Route index element={<Home />}></Route>
           <Route path='Shop/*'  element={<Shop />}></Route>
           <Route path='Authentication' element={<Authentication />}></Route>
